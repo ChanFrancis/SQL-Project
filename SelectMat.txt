@@ -1,0 +1,6 @@
+Exercice 4
+Wording and coefficient (expressed as a percentage) of each subject
+SELECT wording, CONCAT(coef*100, '%') AS Percentage FROM Matter;
+
+Sum of coefficients of all subject
+SELECT SUM(coef) FROM Matter

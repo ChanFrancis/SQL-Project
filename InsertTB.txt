@@ -1,0 +1,80 @@
+Exercice 2
+7 students 
+	3 in the same city
+	3 Named Dupond, Durand, Martin
+	2 city in which names contains "LL"
+
+3 Matters min
+	2 coef >= 1 
+	1 coef > 1
+	2 Matter > 1 test
+
+30 Notations required
+	18 scores >= 10
+	2 scores  = 20
+	2 tests with different subjects
+	Students < 6 per tests
+
+5 tests required
+	3 test have date between 1/1/2014 and 30/6/2014 
+
+
+	 
+Student 
+INSERT INTO Student VALUES(1, 'Boucher', 'Dupond', '2000-01-01', 'rue Rivoli', '59800', 'Lille');
+INSERT INTO Student VALUES(2,'Rivoli', 'Durand', '2000-05-26', 'rue Strasbourg', '59800', 'Lille');
+INSERT INTO Student VALUES(3,'Donald', 'Martin', '2000-05-26', 'rue Paris', '75001', 'Paris');
+INSERT INTO Student VALUES(4, 'Dubois', 'Chris', '2001-01-21', 'rue Martin', '69001', 'Lyon');
+INSERT INTO Student VALUES(5,'Dubalais', 'Phil', '1999-12-23', 'rue Berlin', '69000', 'Lyon');
+INSERT INTO Student VALUES(6,'Nom', 'Victore', '2000-12-22', 'rue Nath', '75002', 'Paris');
+INSERT INTO Student VALUES(7,'Do', 'John', '2000-06-28', 'rue rue', '70503', 'Paris');
+
+Test
+INSERT INTO Test VALUES(101, '2014-02-02', 'Paris', 'M01');
+INSERT INTO Test VALUES(102,'2014-05-05', 'Paris', 'FR01');
+INSERT INTO Test VALUES(103,'2014-06-20', 'Paris', 'A01');
+INSERT INTO Test VALUES(104,'2013-08-22', 'Paris', 'M02');
+INSERT INTO Test VALUES(105,'2015-01-12', 'Paris', 'FR02');
+INSERT INTO Test VALUES(106,'2016-01-12', 'Paris', 'EN02');
+
+Matter
+INSERT INTO Matter VALUES('M01', 'Math', 1.2);
+INSERT INTO Matter VALUES('FR01', 'French', 1.5);
+INSERT INTO Matter VALUES('A01', 'Art', 1);
+INSERT INTO Matter VALUES('M02', 'Geometry', 0.7);
+INSERT INTO Matter VALUES('FR02', 'French Verb', 0.9);
+INSERT INTO Matter VALUES('EN02', 'English', 0.5);
+
+Notation
+INSERT INTO Notation VALUES(1, 101, 20);
+INSERT INTO Notation VALUES(2, 103, 20);
+INSERT INTO Notation VALUES(3, 106, 15);
+INSERT INTO Notation VALUES(1, 106, 12);
+INSERT INTO Notation VALUES(5, 103, 18);
+INSERT INTO Notation VALUES(6, 101, 10);
+INSERT INTO Notation VALUES(7, 105, 10);
+INSERT INTO Notation VALUES(3, 101, 13);
+INSERT INTO Notation VALUES(2, 102, 17);
+INSERT INTO Notation VALUES(7, 101, 18);
+INSERT INTO Notation VALUES(4, 103, 12);
+INSERT INTO Notation VALUES(4, 102, 12);
+INSERT INTO Notation VALUES(4, 106, 10);
+INSERT INTO Notation VALUES(5, 103, 11);
+INSERT INTO Notation VALUES(6, 106, 11);
+INSERT INTO Notation VALUES(1, 102, 15);
+INSERT INTO Notation VALUES(2, 105, 19);
+INSERT INTO Notation VALUES(2, 106, 13);
+INSERT INTO Notation VALUES(3, 102, 9);
+INSERT INTO Notation VALUES(6, 104, 5);
+INSERT INTO Notation VALUES(7, 101, 1);
+INSERT INTO Notation VALUES(7, 102, 3);
+INSERT INTO Notation VALUES(5, 105, 2);
+INSERT INTO Notation VALUES(5, 105, 1);
+INSERT INTO Notation VALUES(3, 103, 1);
+INSERT INTO Notation VALUES(4, 104, 9);
+INSERT INTO Notation VALUES(1, 104, 8);
+INSERT INTO Notation VALUES(1, 105, 7);
+INSERT INTO Notation VALUES(6, 104, 6);
+INSERT INTO Notation VALUES(6, 104, 9);
+
+
